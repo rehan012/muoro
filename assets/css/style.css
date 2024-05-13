@@ -1001,6 +1001,10 @@ section .card .image img {
 \*-----------------------------------*/
 
 @media (max-width: 450px) {
+  .container{
+    max-width: 440px;
+  }
+
   .header .btn {
   margin-top: 20px;
     padding: 4px 10px;
@@ -1010,6 +1014,7 @@ section .card .image img {
     margin: auto !important;
     box-sizing: border-box !important;
   }
+
   .hero-title {
     font-size: 50px;
     line-height: 60px;
@@ -1041,7 +1046,7 @@ section .card .image img {
     text-align: center;
   }
   .testimonial-card{
-    width: 398px !important;
+    width: 100% !important;
   }
   .partners-title {
     font-size: 50px;
@@ -1060,6 +1065,8 @@ section .card .image img {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: auto;
+    padding:  0 5px;
   }
   .about-img {
     width: 400px;
