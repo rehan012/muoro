@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Muoro</title>
+  <meta name="title" content="Adex" />
+  <meta name="description" content="This is a remote software engineers providing company" />
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/muoro-logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!--
+    bootstrap link
+  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero_image.jpg" />
+
+</head>
+
+<body>
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/images/muoro-logo.svg" width="74" height="24" alt="home" class="logo-light" />
+
+        <img src="./assets/images/muoro-logo.svg" width="64" height="24" alt="Muoro Logo" class="logo-dark" />
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/Muoro_footer.png" width="74" height="24" alt="home" />
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#" class="navbar-link">About</a>
+          </li>
+
+
+          <li>
+            <a href="#" class="navbar-link dropbtn">Services <ion-icon class="dropdown-icon" name="caret-down-outline"></ion-icon></a>
+            <div class="dropdown-content">
+              <a href="#">Services 1</a>
+              <a href="#">Services 2</a>
+              <a href="#">Services 3</a>
+            </div>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link industries-menu">Industries</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">How it works</a>
+          </li>
+          <li>
+            <button id="contact-us-btn" class="btn">Contact us</button>
+          </li>
+        </ul>
+
+
+
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
+
+          <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
+        </div>
+
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home" style="position: relative;">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="h1 hero-title" style="position: relative;">
+              <div style="z-index: 1000;">
+                Unleash digital product engineering like never <div class="hero-highlighter-div">before.
+                  <img class="hero-highlighter-img" src="./assets/images/Line.png" width="459px" height="112px" />
+                </div>
+
+              </div>
+
+
+
+            </h1>
+
+            <p class="hero-text">
+              We’re a creative company that focuses on establishing long-term
+              relationships with customers.Don't let your vision remain a
+              dream. Muoro bridges the gap between brilliant ideas and
+              industry-leading digital applications. Let's build something
+              disruptive and remarkable together. 
+            </p>
+
+
+          </div>
+          <!-- talk to expert form -->
+          <div id="expert-modal" class="modal hidden">
+            <div class="expert-modal-content">
+              <form class="expert-form" id="myForm" action="https://api.web3forms.com/submit">
+                <div class="row">
+                  <h3 class="form-title col-lg-10" style="text-align: left;font-size: 24px;">Talk to an expert:</h3>
+                  <span class="expert-close-btn col-lg-1" style="margin-left: auto;">&times;</span>
+                </div>
+
+                <!-- <input type="hidden" name="access_key" value="9a98cd55-b20c-4b11-882c-2ca3ea03a495" /> -->
+                <input type="hidden" name="from_name" value="New Form Submitted" />
+
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="Name" placeholder="Enter Your Name" required />
+                <label for="phone">Phone</label>
+                <input type="number" id="phone" name="Phone" placeholder="Phone Number" />
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="Email" placeholder="Enter Your Email" required />
+                <label for="country">Country</label>
+                <input type="text" id="country" name="Country" placeholder="Enter Your Country" />
+                <label for="requirement">How Can We Help You? *</label>
+                <textarea id="requirement" name="Requirement" placeholder="Your Requirement" required></textarea>
+
+                <input type="hidden" name="subject" value="Enquiry from Page: {Muoro New Website}" />
+
+                <div class="h-captcha" data-captcha="false"></div>
+
+                <button class="btn btn-primary" type="submit"
+                  style="width: 100%;padding:8px 20px;border-radius: 10px;">TALK TO AN EXPERT</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- contact us form -->
+        <div id="modal" class="modal hidden">
+          <div class="modal-content">
+            <div class="row">
+              <h3 class="col-lg-11 form-title">Send us your Details !</h3>
+              <span class="close-btn col-lg-1" style="margin-left: auto;">&times;</span>
+            </div>
+
+            <form id="myContactForm" method="POST">
+              <input type="hidden" name="access_key" id="access_key" value="9a98cd55-b20c-4b11-882c-2ca3ea03a495" />
+              <input type="hidden" name="from_name" id="from_name" value="New Form Submitted" />
+
+              <div class="row">
+                <div class="col-lg">
+                  <label for="name">Name *</label>
+                  <input type="text" id="name" name="Name" placeholder="Enter Your Name" required />
+
+                </div>
+
+                <div class="col-lg">
+                  <label for="organisation">Organisation *</label>
+                  <input type="text" id="organisation" name="Organisation" placeholder="Enter Your Organisation"
+                    required />
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-lg"><label for="phone">Phone *</label>
+                  <input type="number" id="phone" name="Phone" placeholder="Phone Number" required />
+                </div>
+                <div class="col-lg">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="Email" placeholder="Enter Your Email" required />
+                </div>
+
+              </div>
+              <label for="requirement">Requirement</label>
+              <textarea id="requirement" name="Requirement" placeholder="Your Requirement" required></textarea>
+
+              <input type="hidden" name="subject" id="subject" value="Enquiry from Page: {Muoro New Website}" />
+
+              <div class="h-captcha" data-captcha="false"></div>
+
+              <button type="submit" class="btn btn-primary col-lg-2" style="padding: 12px 15px;">Submit</button>
+            </form>
+
+          </div>
+        </div>
+
+        </div>
+
+        <button id="contact-expert-btn" class="btn-danger contact-expert-btn">Talk to an expert</button>
+
+
+      </section>
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-labelledby="service-label">
+        <div class="container">
+          <h2 class="h2 section-title" style="position: relative;">
+            Why digital engineering<br />with Muoro?
+            <img src="./assets/images/Vector.png" class="service-highlighter-img" />
+          </h2>
+
+          <ul class="row g-5 ps-0">
+            <li class="col-lg-4">
+              <div class="project-card">
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350">
+                  <img src="./assets/images/Rectangle 25.png" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover" />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Industry Recognition</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Muoro's engineers worked seamlessly with our global teams
+                    to deliver a new video streaming platform on an aggressive
+                    timeline.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="col-lg-4">
+              <div class="project-card">
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350">
+                  <img src="./assets/images/Rectangle 25.png" width="560" height="350" loading="lazy"
+                    alt="Nullam id dolor elit id nibh" class="img-cover" />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Innovation at Play</a>
+                  </h3>
+
+                  <p class="card-text">
+                    The quality of their software development process was
+                    second to none. Would definitely hire Muoro again for my
+                    future endeavors.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="col-lg-4">
+              <div class="project-card">
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350">
+                  <img src="./assets/images/Rectangle 25.png" width="560" height="350" loading="lazy"
+                    alt="Ultricies fusce porta elit" class="img-cover" />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Global Footprint</a>
+                  </h3>
+
+                  <p class="card-text">
+                    The quality of their software development process was
+                    second to none. Would definitely hire Muoro again for my
+                    future endeavors.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+          <div class="about-content-img" style="position: relative;">
+            <img src="./assets/images/Remove-bg 2.png" width="80" height="69" loading="lazy" alt="about banner"
+              style="position: absolute;top: 50px;left: 0;" />
+            <figure class="about-banner">
+              <img src="./assets/images/research.png" width="500" height="515" loading="lazy" alt="about banner"
+                class="about-img" />
+            </figure>
+            <img src="./assets/images/Remove-bg 1.png" width="50" height="69" loading="lazy" alt="about banner"
+              style="position: absolute;top: 200px;left: 350px;" />
+          </div>
+
+          <div class="about-content">
+            <h2 class="about-title">Muoro’s Deal</h2>
+            <p class="about-para">
+              Muoro is a top digital engineering partner that specializes in cutting-edge technologies including AI/ML,
+              cloud, SaaS, blockchain, and more. Muoro, which is dedicated to speeding modernization and innovation,
+              provides value at scale to digital natives and multinational companies. Our capabilities and years of
+              experience allow us to excel in both engineering and management.
+            </p>
+
+            <button class="btn btn-primary btn-lg w-50">View</button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="container" aria-label="our stats">
+        <div class="stats-container">
+          <div class="stats-item">
+            <div class="stats-item-title">
+              200k+
+            </div>
+            <div class="stats-item-para">in app transfer</div>
+          </div>
+          <div class="stats-item">
+            <div class="stats-item-title">
+              75%
+            </div>
+            <div class="stats-item-para">performance improve</div>
+          </div>
+          <div class="stats-item">
+            <div class="stats-item-title">
+              110
+            </div>
+            <div class="stats-item-para">companies</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #clients
+      -->
+
+      <section class="testimonial-container container ">
+        <h3 class="testimonial-title">Here’s what our client have to say about us:</h3>
+        <div class="testimonial-section">
+
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper content">
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/images/profile1.jpg" alt="" />
+                  </div>
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession">Muoro's engineers worked seamlessly with our global teams to deliver a new
+                      video streaming platform on an aggressive timeline.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/images/profile2.jpg" alt="" />
+                  </div>
+
+
+
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession">Muoro's engineers worked seamlessly with our global teams to deliver a new
+                      video streaming platform on an aggressive timeline.</span>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/images/profile3.jpg" alt="" />
+                  </div>
+
+
+
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession">Muoro's engineers worked seamlessly with our global teams to deliver a new
+                      video streaming platform on an aggressive timeline.</span>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/images/profile4.jpg" alt="" />
+                  </div>
+
+
+
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession">Muoro's engineers worked seamlessly with our global teams to deliver a new
+                      video streaming platform on an aggressive timeline.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/images/profile5.jpg" alt="" />
+                  </div>
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession">Muoro's engineers worked seamlessly with our global teams to deliver a new
+                      video streaming platform on an aggressive timeline.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/images/profile6.jpg" alt="" />
+                  </div>
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession">Muoro's engineers worked seamlessly with our global teams to deliver a new
+                      video streaming platform on an aggressive timeline.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/images/profile7.jpg" alt="" />
+                  </div>
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession">Muoro's engineers worked seamlessly with our global teams to deliver a new
+                      video streaming platform on an aggressive timeline.</span>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/images/profile8.jpg" alt="" />
+                  </div>
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession">Muoro's engineers worked seamlessly with our global teams to deliver a new
+                      video streaming platform on an aggressive timeline.</span>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="swiper-button-next testimonial-next"></div>
+          <div class="swiper-button-prev testimonial-prev"></div>
+          
+
+      </section>
+      </section>
+
+
+
+      <!-- 
+        - #our partners
+      -->
+
+      <section class="partners" aria-label="our partners">
+        <div style="position: relative;">
+          <h2 class="partners-title">Our Partners</h2>
+          <img src="./assets/images/Vector.png" class="partners-highlighter-img" />
+        </div>
+
+        <div class="partner-carousel swiper" style="width: 80%;box-sizing: border-box;">
+          <div class="swiper-wrapper col-lg-4 col-md-6" style="width: 90%;padding: 0 20px;">
+            <div class="swiper-slide">
+              <div class="partner-logo"> <img src="./assets/images/puma-logo.png" alt="Partner Logo 1">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo"> <img src="./assets/images/neudesic-logo.png" alt="Partner Logo 2">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo"> <img src="./assets/images/nike-logo.png" alt="Partner Logo 2">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo"> <img src="./assets/images/algoworks-logo.png" alt="Partner Logo 2">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo"> <img src="./assets/images/yahama-logo.png" alt="Partner Logo 2">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo"> <img src="./assets/images/unifocus-logo.png" alt="Partner Logo 2">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo"> <img src="./assets/images/pinelabs-logo.jpg" alt="Partner Logo 2">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo"> <img src="./assets/images/bounce-infinity-logo.png" alt="Partner Logo 2">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo"> <img src="./assets/images/crg-logo.png" alt="Partner Logo 2">
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="swiper-button-next partner-next"></div>
+        <div class="swiper-button-prev partner-prev"></div>
+        
+
+
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-brand col-lg-3 col-sm-6">
+          <a href="#" class="logo">
+            <img src="./assets/images/muoro-logo.svg" width="74" height="24" alt="Adex home" />
+          </a>
+          <p class="footer-text">
+            Let’s code your <br> digital <br> engineering <br>projects. 
+          </p>
+          <p class="footer-text">
+            &copy; 2024 muoro. <br />
+            All rights reserved.
+          </p>
+
+
+        </div>
+        <ul class="social-list col-lg-3 col-sm-6">
+          <p class="h4 footer-list-title" style="font-size: 20px;font-weight: 600;">Follow Us</p>
+          <div class="social-link-div">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-dribbble"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </div>
+        </ul>
+
+        <ul class="footer-list col-lg-3 col-sm-6">
+          <li>
+            <p class="h4 footer-list-title" style="font-size: 20px;font-weight: 600;">Contact</p>
+          </li>
+
+          <li>
+            <address class="footer-text">
+              Address : 4-5 Main road, Delhi
+            </address>
+          </li>
+
+          <li>
+            <a href="mailto:info@email.com" class="footer-link">connect@muoro.io</a>
+          </li>
+
+          <li>
+            <a href="tel:001234567890" class="footer-link">(+91) 813-083-4172</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list col-lg-3 col-sm-6">
+          <li>
+            <p class="h4 footer-list-title" style="font-size: 20px;font-weight: 600;">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Story</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Projects</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms of Use</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+
+  <!-- 
+    - custom js link
+  -->
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/mail.js"></script>
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+</body>
+
+</html>
