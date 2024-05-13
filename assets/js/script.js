@@ -30,25 +30,34 @@ addEventOnElements(navTogglers, "click", toggleNavbar);
 const servicesDropdown = document.querySelector(".dropbtn");
 const dropdownContent = document.querySelector(".dropdown-content");
 
+const collapseServicesDropdown = function () {
+  dropdownContent.classList.remove("show");
+  // Reset dropdown-active class on Industries menu item
+  const industriesMenuItem = document.querySelector(".industries-menu");
+  industriesMenuItem.classList.remove("dropdown-active");
+};
+
+// Event listener for clicks anywhere on the document
+document.addEventListener("click", function (event) {
+  // Check if the clicked element is not part of the services dropdown
+  if (!event.target.matches(".dropbtn") && !event.target.matches(".dropdown-content") && dropdownContent.classList.contains("show")) {
+    collapseServicesDropdown();
+  }
+});
+
 const toggleDropdown = function () {
   dropdownContent.classList.toggle("show");
 
   // Toggle dropdown-active class on Industries menu item
   const industriesMenuItem = document.querySelector(".industries-menu");
   if (dropdownContent.classList.contains("show")) {
-    // If dropdown is opened, calculate its height
       // Apply margin to the navbar list to push it down
       industriesMenuItem.classList.add("dropdown-active")
-      console.log("open");
-  } else {
+       } else {
     // If dropdown is closed, reset the margin
     industriesMenuItem.classList.remove("dropdown-active")
   }
-
-  console.log("dropdown");
 };
-
-
 
 servicesDropdown.addEventListener("click", toggleDropdown);
 
@@ -85,10 +94,10 @@ const testimonialSlider = new Swiper(".mySwiper", {
   breakpoints: {
     // Optional: Adjust settings for different screen sizes
     200: {
-      slidesPerView: 1, // Show 2 logos on smaller screens
+      slidesPerView: 1, // Show 1 logo on smaller screens
     },
     1024: {
-      slidesPerView: 2, // Show 3 logos on medium screens
+      slidesPerView: 2, // Show 2 logos on larger screens
     },
   },
 });
@@ -109,10 +118,10 @@ const partnerCarousel = new Swiper(".partner-carousel", {
   breakpoints: {
     // Optional: Adjust settings for different screen sizes
     200: {
-      slidesPerView: 1, // Show 2 logos on smaller screens
+      slidesPerView: 1, // Show 1 logo on smaller screens
     },
-    1024: {
-      slidesPerView: 4, // Show 3 logos on medium screens
+    990: {
+      slidesPerView: 4, // Show 4 logos on large screens
     },
   },
 });
