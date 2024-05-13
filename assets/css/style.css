@@ -318,9 +318,9 @@ label {
   #HEADER
 \*-----------------------------------*/
 
-.header .btn {
+/* .header .btn {
   display: none;
-}
+} */
 
 .header {
   position: absolute;
@@ -1001,6 +1001,10 @@ section .card .image img {
 \*-----------------------------------*/
 
 @media (max-width: 450px) {
+  .header .btn {
+  margin-top: 20px;
+    padding: 4px 10px;
+  }
   section {
     width: 100% !important;
     margin: auto !important;
@@ -1069,6 +1073,13 @@ section .card .image img {
   }
   .stats-item-para {
     font-size: 16px;
+  }
+  .expert-form {
+    width: 80%;    
+    left: 10%;
+  }
+  .form-title{
+    font-size: 25px;
   }
 }
 
