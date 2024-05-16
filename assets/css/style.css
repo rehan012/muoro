@@ -15,7 +15,7 @@
    * colors
    */
 
-  --blue: hsla(221, 60%, 55%, 1);
+  --blue: rgb(71, 115, 209);
   --title-black: #1f392c;
   --white: hsla(0, 0%, 100%, 1);
   --white_a3: hsla(0, 0%, 100%, 0.03);
@@ -164,18 +164,6 @@ body.nav-active {
 ::-webkit-scrollbar {
   width: 0;
 }
-
-/* ::-webkit-scrollbar-track {
-  background-color: hsl(0, 0%, 98%);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: hsl(0, 0%, 80%);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(0, 0%, 70%);
-} */
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -507,13 +495,8 @@ label {
   #HERO
 \*-----------------------------------*/
 
-/* .hero {
-  padding-block-start: calc(var(--section-padding) + 70px);
-  text-align: center;
-} */
-
 .hero {
-  background-image: url("../images/hero.png");
+  background-image: url("../images/hero.webp");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -685,16 +668,12 @@ label {
   position: absolute;
   top: 50px;
   left: 0;
-  width: 80px;
-  height: 80px;
 }
 
 .about-content-right-bulb-img {
   position: absolute;
   top: 200px;
-  left: 553px;
-  width: 50px;
-  height: 50px;
+  left: 510px;
 }
 
 /*-----------------------------------*\
@@ -755,7 +734,7 @@ label {
   font-size: 96px;
   line-height: 117px;
   font-weight: 800;
-  color: #f0c659;
+  color: var(--blue);
 }
 
 .stats-item-para {
@@ -803,13 +782,14 @@ label {
 }
 /* CSS for even and odd cards */
 .testimonial-card:nth-child(even) {
-  background-color: var(
-    --blue
-  ); /* Set background color for even-indexed cards */
+  background-color: var(--blue);
+  span {
+    color: white;
+  }
 }
 
 .testimonial-card:nth-child(odd) {
-  background-color: #507ecb42; /* Set background color for odd-indexed cards */
+  background-color: #507ecb42;
 }
 
 .card .card-content {
@@ -1013,12 +993,6 @@ section .card .image img {
   color: var(--blue);
 }
 
-.footer .social-link-div {
-  display: flex;
-  gap: 10px;
-  font-size: 20px;
-}
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -1027,7 +1001,9 @@ section .card .image img {
   .container {
     max-width: 440px;
   }
-
+  .hero {
+    background-image: url("../images/hero_mobile.webp");
+  }
   .header .btn {
     margin-top: 20px;
     padding: 4px 10px;
@@ -1039,10 +1015,11 @@ section .card .image img {
   }
 
   .hero-title {
-    font-size: 50px;
+    font-size: 45px;
     line-height: 60px;
     text-align: center;
   }
+
   .hero-highlighter-img {
     width: 200px;
     height: 50px;
@@ -1050,7 +1027,7 @@ section .card .image img {
   }
 
   .h2.section-title {
-    font-size: 50px;
+    font-size: 45px;
     line-height: 60px;
   }
 
@@ -1099,7 +1076,7 @@ section .card .image img {
   } */
   .about-content-left-bulb-img {
     top: 17px;
-    left: 35px;
+    left: 15px;
   }
 
   .about-content-right-bulb-img {
@@ -1465,11 +1442,5 @@ section .card .image img {
     max-width: 1320px;
   }
 
-  /**
-   * FEATURE
-   */
-
-  .feature-list {
-    grid-template-columns: 1fr 1fr;
-  }
+ 
 }

@@ -178,3 +178,5 @@ const swiperElement = document.querySelector('.partner-carousel');
 
 // Start observing the Swiper element
 swiperObserver.observe(swiperElement);
+
+
