@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Muoro</title>
+    <meta name="title" content="Adex" />
+    <meta
+      name="description"
+      content="This is a remote software engineers providing company"
+    />
+
+    <!-- 
+  - favicon
+-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/muoro-logo.svg"
+      type="image/svg+xml"
+    />
+    <!-- 
+  - google font link
+-->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      media="screen,print"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+      media="screen,print"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+      media="screen,print"
+    />
+
+    <!--
+  bootstrap link
+-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+      media="screen,print"
+    />
+    <!-- 
+  - custom css link
+-->
+    <link rel="stylesheet" href="./assets/css/style.css" media="screen,print" />
+
+    <!-- 
+  - preload images
+-->
+    <link rel="preload" as="image" href="./assets/images/industries-hero-image.webp" />
+    <!-- <link rel="preload" as="image" href="./assets/images/hero_mobile.webp" />
+    <link rel="preload" as="image" href="./assets/images/Line.webp" /> -->
+  </head>
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="./assets/images/muoro-logo.svg"
+            width="74"
+            height="75"
+            alt="home"
+            class="logo-light"
+            loading="lazy"
+          />
+
+          <img
+            src="./assets/images/muoro-logo.svg"
+            width="64"
+            height="65"
+            alt="Muoro Logo"
+            class="logo-dark"
+            loading="lazy"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="index.html" class="logo">
+              <img
+                src="./assets/images/Muoro_footer.png"
+                width="74"
+                height="75"
+                alt="home"
+                loading="lazy"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="services.html" class="navbar-link dropbtn"
+                >Services
+                <ion-icon
+                  class="dropdown-icon"
+                  name="caret-down-outline"
+                ></ion-icon
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">Services 1</a>
+                <a href="#">Services 2</a>
+                <a href="#">Services 3</a>
+              </div>
+            </li>
+
+            <li>
+              <a href="industries.html" class="navbar-link industries-menu"
+                >Industries</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">How it works</a>
+            </li>
+            <li>
+              <button id="contact-us-btn" class="btn">Contact us</button>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:info@email.com" class="contact-link"
+              >info@email.com</a
+            >
+
+            <a href="tel:001234567890" class="contact-link"
+              >00 (123) 456 78 90</a
+            >
+          </div>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <section class="section hero-section">
+        <div class="industries-container">
+          <div class="hero-container">
+            <div class="industries-hero-content">
+              <h1 class="industries-hero-title">Accelerated Fintech!</h1>
+              <p class="lead">
+                We help you learn language easily, witjh small lessons , you`ll
+                earn points and unlock new levels while improving you rel world
+                communications.
+              </p>
+              <a href="#" class="btn btn-primary btn-lg">Read More</a>
+            </div>
+
+            <div class="industries-hero-image">
+              <img
+                src="./assets/images/industries-hero-image.webp"
+                alt="home"
+                class="logo-light"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banking-section">
+        <div class="industries-container">
+          <div class="banking-content">
+            <div class="banking-text">
+              <h2>Banking</h2>
+              <p>
+                Our mission is to help banks deliver a superior and consistent
+                customer experience by leveraging analytics and intelligence
+                throughout the customer life cycle. As banks continue to
+                digitize their processes to remain competitive in the global
+                market, we provide solutions that decrease human error and
+                enhance customer loyalty.
+              </p>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="card odd-card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img
+                        src="./assets/images/banking-card-1.webp"
+                        alt=""
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <div class="name-profession">
+                      <span class="name">Continuing to innovate</span>
+                      <span class="profession"
+                        >Improve customer experience with faster time-to market,
+                        and innovative strategies across digital channels.
+                        Consumer requirements have been satisfied in creative
+                        ways across all verticals, challenging the existing
+                        enterprise value chains.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="card even-card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img
+                        src="./assets/images/banking-card-2.webp"
+                        alt=""
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <div class="name-profession">
+                      <span class="name">Crafted Fintech Solutions</span>
+                      <span class="profession"
+                        >Together with experienced experts in fintech software
+                        solutions, we develop bespoke financial solutions for
+                        your company and integrate them seamlessly into your
+                        existing business processes.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <div class="card odd-card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img
+                        src="./assets/images/banking-card-3.webp"
+                        alt=""
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <div class="name-profession">
+                      <span class="name">Retail Banking Experts</span>
+                      <span class="profession"
+                        >An insight-based, results driven customer acquisition
+                        solution to power your business. Our experienced
+                        technology-focused team helps you identify, acquire, and
+                        engage users across digital channels.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section industries-container services-section">
+        <h2 class="industries-services-heading">What We Do</h2>
+        <div class="services-container">
+          <div class="industries-services-content">
+            <h3 class="industries-services-title">Customer 360</h3>
+            <p class="lead">
+              360-degree perspective of a customer requires gaining deeper
+              insights into customers' preferences and intent in order to affect
+              them to achieve desired results. With the help of various
+              cross-sell and upsell banking solutions, banks may combine
+              consumer information from numerous channels, such as CRM, mobile
+              platforms, online platforms, and IoT.
+            </p>
+            <a href="#" class="btn btn-primary btn-lg">Schedule a Call ></a>
+          </div>
+          <div class="industries-services-images" style="position: relative">
+            <figure>
+              <img
+                src="./assets/images/services-image-1.png"
+                alt="home"
+                class="industries-services-main-image"
+                loading="lazy"
+              />
+            </figure>
+            <img
+              src="./assets/images/services-image-2.png"
+              alt="home"
+              class="industries-services-image-2"
+              loading="lazy"
+            />
+            <img
+              src="./assets/images/services-image-3.png"
+              alt="home"
+              class="industries-services-image-3"
+              loading="lazy"
+            />
+            <img
+              src="./assets/images/services-image-4.png"
+              alt="home"
+              class="industries-services-image-4"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="services-cards-block">
+          <div class="row" style="row-gap: 20px">
+            <div class="col-lg-4 col-md-12">
+              <div class="services-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/services-card-1.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <span class="card-name">Retail Banking</span>
+                <span class="card-description">
+                  Digital retail banking provides all services online, including
+                  account opening, funds transfers, loans, and debit/credit
+                  cards. This self-serve model enhances convenience, experience,
+                  and access.</span
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="services-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/services-card-2.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <span class="card-name">Cloud Banking</span>
+                <span class="card-description">
+                  This enables quicker, more efficient responses to customer
+                  needs. With cloud access anytime, infrastructure costs and
+                  setup time are reduced, allowing new products to be developed
+                  without significant capital investment.</span
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="services-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/services-card-3.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <span class="card-name">Advanced Analytics</span>
+                <span class="card-description">
+                  Analytics enhances banks' marketing power and supports optimal
+                  performance in areas like Risk, Compliance, Fraud, NPA
+                  monitoring, and Value at Risk calculation.</span
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="services-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/services-card-4.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <span class="card-name">Digital On-boarding</span>
+                <span class="card-description">
+                  Our AI-powered onboarding and digital transformation strategy
+                  provide a smooth, user-centric experience, potentially
+                  increasing customer engagement.</span
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="services-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/services-card-5.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <span class="card-name">Digital Engagement</span>
+                <span class="card-description">
+                  Digital banking platforms offer clients a safer, better online
+                  experience, enhancing customer relationships and benefiting
+                  the bank.</span
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="services-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/services-card-6.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <span class="card-name">Robotics Process Automation</span>
+                <span class="card-description">
+                  UseRobotic process automation (RPA) assists banks and other
+                  financial organisations in increasing efficiency by involving
+                  customers in real-time interactions.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section values-added-services-section">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12 text-center">
+            <img
+              src="./assets/images/value-added-services.png"
+              alt="Value Added Services"
+              loading="lazy"
+              class="value-added-image"
+            />
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="value-added-content">
+              <h3 class="value-added-heading">Value Added Services</h3>
+              <ul class="value-added-list">
+                <li>
+                  <img
+                    src="./assets/images/right.png"
+                    alt="Value Added Services"
+                    loading="lazy"
+                  />
+                  <span class="value-added-point">
+                    <span class="value-added-item-heading">Consulting: </span
+                    ><span class="value-added-item-description">
+                      Expert Advice: Find Clients, Boost Your Visibility, Grow
+                      Your Audience</span
+                    ></span
+                  >
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/right.png"
+                    alt="Value Added Services"
+                    loading="lazy"
+                  />
+                  <span class="value-added-point">
+                    <span class="value-added-item-heading"
+                      >System Integration:</span
+                    ><span class="value-added-item-description">
+                      : Cutting-Edge Insights: Latest Tests on Content, Ads, and
+                      Conversions</span
+                    ></span
+                  >
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/right.png"
+                    alt="Value Added Services"
+                    loading="lazy"
+                  />
+                  <span class="value-added-point">
+                    <span class="value-added-item-heading"
+                      >Managed Services:: </span
+                    ><span class="value-added-item-description">
+                      Cutting-Edge Insights: Latest Tests on Content, Ads, and
+                      Conversions</span
+                    ></span
+                  >
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/right.png"
+                    alt="Value Added Services"
+                    loading="lazy"
+                  />
+                  <span class="value-added-point">
+                    <span class="value-added-item-heading"
+                      >Training and Support:: </span
+                    ><span class="value-added-item-description">
+                      Cutting-Edge Insights: Latest Tests on Content, Ads, and
+                      Conversions</span
+                    ></span
+                  >
+                </li>
+
+                <!-- Add more list items here -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section status-neo-description">
+        <span>
+          StatusNeo is here to assist you as a key spanartner in designing
+          powerful solutions. In order to flourish and sustain your business,
+          it’simperative to keep customers at the heart of everything. We help
+          you streamline inefficient processes and adopt agile strategiesfor you
+          to maintain competitive advantage and provide utmost customer
+          satisfaction.</span
+        >
+      </section>
+
+      <section class="empower-section industries-container">
+        <h2 class="empower-heading">Who We Empower</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="empower-card card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="./assets/images/banking-card-1.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="empower-card-content">
+                  <span class="card-heading">Continuing to innovate</span>
+                  <span class="card-description"
+                    >Improve customer experience with faster time-to market, and
+                    innovative strategies across digital channels. Consumer
+                    requirements have been satisfied in creative ways across all
+                    verticals, challenging the existing enterprise value
+                    chains.</span
+                  >
+                </div>
+                <div class="empower-learn-more">
+                  <span>Learn more</span><span class="right-arrow">></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="empower-card card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="./assets/images/banking-card-1.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="empower-card-content">
+                  <span class="card-heading">Continuing to innovate</span>
+                  <span class="card-description"
+                    >Improve customer experience with faster time-to market, and
+                    innovative strategies across digital channels. Consumer
+                    requirements have been satisfied in creative ways across all
+                    verticals, challenging the existing enterprise value
+                    chains.</span
+                  >
+                </div>
+                <div class="empower-learn-more">
+                  <span>Learn more</span><span class="right-arrow">></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="empower-card card odd-card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="./assets/images/banking-card-1.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="empower-card-content">
+                  <span class="card-heading">Continuing to innovate</span>
+                  <span class="card-description"
+                    >Improve customer experience with faster time-to market, and
+                    innovative strategies across digital channels. Consumer
+                    requirements have been satisfied in creative ways across all
+                    verticals, challenging the existing enterprise value
+                    chains.</span
+                  >
+                </div>
+                <div class="empower-learn-more">
+                  <span>Learn more</span><span class="right-arrow">></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="empower-card card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="./assets/images/banking-card-1.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="empower-card-content">
+                  <span class="card-heading">Continuing to innovate</span>
+                  <span class="card-description"
+                    >Improve customer experience with faster time-to market, and
+                    innovative strategies across digital channels. Consumer
+                    requirements have been satisfied in creative ways across all
+                    verticals, challenging the existing enterprise value
+                    chains.</span
+                  >
+                </div>
+                <div class="empower-learn-more">
+                  <span>Learn more</span><span class="right-arrow">></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="empower-card card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="./assets/images/banking-card-1.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="empower-card-content">
+                  <span class="card-heading">Continuing to innovate</span>
+                  <span class="card-description"
+                    >Improve customer experience with faster time-to market, and
+                    innovative strategies across digital channels. Consumer
+                    requirements have been satisfied in creative ways across all
+                    verticals, challenging the existing enterprise value
+                    chains.</span
+                  >
+                </div>
+                <div class="empower-learn-more">
+                  <span>Learn more</span><span class="right-arrow">></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="empower-card card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="./assets/images/banking-card-1.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="empower-card-content">
+                  <span class="card-heading">Continuing to innovate</span>
+                  <span class="card-description"
+                    >Improve customer experience with faster time-to market, and
+                    innovative strategies across digital channels. Consumer
+                    requirements have been satisfied in creative ways across all
+                    verticals, challenging the existing enterprise value
+                    chains.</span
+                  >
+                </div>
+                <div class="empower-learn-more">
+                  <span>Learn more</span><span class="right-arrow">></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product-information">
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/product-section-image.png"
+              class="product-section-image"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <div class="product-description-content">
+              <h2 class="products-desciption-heading">
+                AI in Banking & Finance
+              </h2>
+              <p>
+                Our product will teach you everything you need to know about
+              </p>
+              <div class="product-description-points">
+                <span>
+                  <img
+                    src="./assets/images/point-1-product-description.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <p>How to get high-paying clients</p>
+                </span>
+                <span>
+                  <img
+                    src="./assets/images/point-2-product-description.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <p>How to effectively use email marketing</p>
+                </span>
+                <span>
+                  <img
+                    src="./assets/images/point-3-product-description.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <p>
+                    How to turn people who follow you on social media into email
+                    subscribers and devoted clients
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="industry-insights">
+        <div class="insights-content">
+          <div class="insights-heading">Industry Insights</div>
+          <div class="insights-sub-heading">
+            Check out what our experts have to say about the forces driving
+            change in the Banking industry.
+          </div>
+        </div>
+        <div class="insights-card-container row">
+          <div class="col-lg-4 card-center">
+            <div class="insights-card">
+              <div class="card-tag" style="background-color: #d66777">
+                <p>
+                  Budh Dhawan,<br />
+                  Banking Industry, Sharepoint
+                </p>
+              </div>
+              <div class="card-box">
+                <div class="card-image">
+                  <img
+                    src="./assets/images/insight-card-1.webp"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="card-text">
+                  Business Intelligence Strategies for Banks Using SharePoint
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 card-center">
+            <div class="insights-card">
+              <div class="card-tag" style="background-color: #ecca47">
+                <p>
+                  Budh Dhawan,<br />
+                  Banking Industry, Sharepoint
+                </p>
+              </div>
+              <div class="card-box">
+                <div class="card-image">
+                  <img
+                    src="./assets/images/insight-card-2.webp"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="card-text">
+                  Web 3.0: Unleashing the Power of Crypto,Blockchain, and
+                  Decentralized Technologies
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 card-center">
+            <div class="insights-card">
+              <div class="card-tag" style="background-color: #6bb991">
+                <p>
+                  Budh Dhawan,<br />
+                  Banking Industry, Sharepoint
+                </p>
+              </div>
+              <div class="card-box">
+                <div class="card-image">
+                  <img
+                    src="./assets/images/insight-card-3.webp"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="card-text">
+                  Secure and Smart: Leveraging Generative AI for Cybersecurity
+                  Solutions
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="coordinates-section">
+        <h3 class="coordinates-heading">
+          Our Coordinates? <br />
+          Let’s Find Out.
+        </h3>
+        <div class="coordinates-points my-3">
+          <div class="point">
+            <img
+              src="./assets/images/right-2.png"
+              alt="coordinates-points-image"
+              loading="lazy"
+            />
+            <p>Build a highly engaged audience</p>
+                      </div>
+          <div class="point">
+            <img
+              src="./assets/images/right-2.png"
+              alt="coordinates-points-image"
+              loading="lazy"
+            />
+            <p>Get more leads</p>
+          </div>
+          <div class="point">
+            <img
+              src="./assets/images/right-2.png"
+              alt="coordinates-points-image"
+              loading="lazy"
+            />
+            <p>Close more clients</p>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary btn-lg my-5">Guarantee Your Success &nbsp  ></a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer industries-footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-brand col-lg-3 col-sm-6">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/muoro-logo.svg"
+                alt="Adex home"
+                loading="lazy"
+                width="73"
+                height="76"
+              />
+            </a>
+            <p class="footer-text">
+              Let’s code your <br />
+              digital <br />
+              engineering <br />projects. 
+            </p>
+            <p class="footer-text">
+              &copy; 2024 muoro. <br />
+              All rights reserved.
+            </p>
+          </div>
+
+          <ul class="social-list col-lg-3 col-sm-6">
+            <li>
+              <p
+                class="h4 footer-list-title"
+                style="font-size: 20px; font-weight: 600"
+              >
+                Follow Us
+              </p>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-dribbble"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list col-lg-3 col-sm-6">
+            <li>
+              <p
+                class="h4 footer-list-title"
+                style="font-size: 20px; font-weight: 600"
+              >
+                Contact
+              </p>
+            </li>
+
+            <li>
+              <address class="footer-text">
+                Address : 4-5 Main road, Delhi
+              </address>
+            </li>
+
+            <li>
+              <a href="mailto:info@email.com" class="footer-link"
+                >connect@muoro.io</a
+              >
+            </li>
+
+            <li>
+              <a href="tel:001234567890" class="footer-link"
+                >(+91) 813-083-4172</a
+              >
+            </li>
+          </ul>
+
+          <ul class="footer-list col-lg-3 col-sm-6">
+            <li>
+              <p
+                class="h4 footer-list-title"
+                style="font-size: 20px; font-weight: 600"
+              >
+                Useful Links
+              </p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Our Story</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Projects</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/mail.js"></script>
+    <!-- 
+  - ionicon
+-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

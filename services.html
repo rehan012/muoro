@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Muoro</title>
+    <meta name="title" content="Adex" />
+    <meta
+      name="description"
+      content="This is a remote software engineers providing company"
+    />
+
+    <!-- 
+  - favicon
+-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/muoro-logo.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      media="screen"
+    />
+    <!-- 
+  - google font link
+-->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      media="screen,print"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+      media="screen,print"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+      media="screen,print"
+    />
+
+    <!--
+  bootstrap link
+-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+      media="screen,print"
+    />
+    <!-- 
+  - custom css link
+-->
+    <link rel="stylesheet" href="./assets/css/style.css" media="screen,print" />
+
+    <!-- 
+  - preload images
+-->
+    <link rel="preload" as="image" href="./assets/images/hero.webp" />
+    <link rel="preload" as="image" href="./assets/images/hero_mobile.webp" />
+    <link rel="preload" as="image" href="./assets/images/Line.webp" />
+  </head>
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="./assets/images/muoro-logo.svg"
+            width="74"
+            height="75"
+            alt="home"
+            class="logo-light"
+            loading="lazy"
+          />
+
+          <img
+            src="./assets/images/muoro-logo.svg"
+            width="64"
+            height="65"
+            alt="Muoro Logo"
+            class="logo-dark"
+            loading="lazy"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="index.html" class="logo">
+              <img
+                src="./assets/images/Muoro_footer.png"
+                width="74"
+                height="75"
+                alt="home"
+                loading="lazy"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link dropbtn"
+                >Services
+                <ion-icon
+                  class="dropdown-icon"
+                  name="caret-down-outline"
+                ></ion-icon
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">Services 1</a>
+                <a href="#">Services 2</a>
+                <a href="#">Services 3</a>
+              </div>
+            </li>
+
+            <li>
+              <a href="industries.html" class="navbar-link industries-menu"
+                >Industries</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">How it works</a>
+            </li>
+            <li>
+              <button id="contact-us-btn" class="btn">Contact us</button>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:info@email.com" class="contact-link"
+              >info@email.com</a
+            >
+
+            <a href="tel:001234567890" class="contact-link"
+              >00 (123) 456 78 90</a
+            >
+          </div>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <section class="services-page-container service-hero">
+        <div class="services-hero-section">
+          <p>What’s new | Faster insights with five new features</p>
+          <h1>
+            Experts In
+            <span class="highlight">
+              AI & DataOps <br />
+              We Build
+            </span>
+            & Manage Your <br />
+            Data Pipelines
+          </h1>
+        </div>
+        <div class="service-hero-image">
+          <img
+            src="./assets/images/service-page-hero.png"
+            alt=""
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="services-provided services-page-container row">
+        <div class="services-provided-cards-container col-lg-3 col-md-6">
+          <div class="services-provided-card">
+            <h2 class="card-number">01</h2>
+            <p class="card-service">AI/ML & Deep Learning</p>
+          </div>
+          <div class="services-provided-description">
+            <p>Our San Francisco Data Science consultants help reinvent your
+            business with AI, ML, and Deep Learning solutions.</p>
+          </div>
+        </div>
+        <div class="services-provided-cards-container col-lg-3 col-md-6">
+          <div class="services-provided-card">
+            <h2 class="card-number">02</h2>
+            <p class="card-service">Analytics & Business(BI)</p>
+          </div>
+          <div class="services-provided-description">
+            <p>Our San Francisco Data Science consultants help reinvent your
+            business with AI, ML, and Deep Learning solutions.</p>
+          </div>
+        </div>
+        <div class="services-provided-cards-container col-lg-3 col-md-6">
+          <div class="services-provided-card">
+            <h2 class="card-number">03</h2>
+            <p class="card-service">MDM & Data Warehousing</p>
+          </div>
+          <div class="services-provided-description">
+            <p>Our San Francisco Data Science consultants help reinvent your
+              business with AI, ML, and Deep Learning solutions.</p>
+          </div>
+        </div>
+        <div class="services-provided-cards-container col-lg-3 col-md-6">
+          <div class="services-provided-card">
+            <h2 class="card-number">04</h2>
+            <p class="card-service">Cloud Software Dev. & Data DevOps</p>
+          </div>
+          <div class="services-provided-description">
+            <p>Our San Francisco Data Science consultants help reinvent your
+            business with AI, ML, and Deep Learning solutions.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="talk-to-us services-page-container">
+        <p>How Can we help You ?</p>
+        <a href="#" class="btn btn-primary btn-lg my-5"
+          >Guarantee Your Success &nbsp ></a
+        >
+      </section>
+
+      <section class="solution-section services-page-container row">
+        <div class="solution-heading col-lg-6">
+          <h2>
+            Re-invent Your Business <br />
+            With AI & Learning
+          </h2>
+        </div>
+        <div class="solution-block-text col-lg-6">
+       <p>   Your business needs Artificial Intelligence(AI) now more than ever
+          before. AI is scaled across industries at an enterprise level. From
+          banks to telecom, healthcare & fitness to travel, industries are
+          collecting & learning from data, building cognitive solutions that
+          spot trends and provide insights to improve business workflows &
+          experiences. From smart Chat Bots that are transforming customer
+          services to mobile applications that make lifestyle recommendations,
+          AI is empowering your business to match 21st century consumer
+          expectations. Our data consultants are statisticians and wranglers who
+          use various leading tools, algorithms & technologies to build and
+          model business outcomes</p>
+        </div>
+
+        <div class="solution-block-text col-lg-6">
+         <p> Business Intelligence platforms like Tableau and Qlik are no longer
+          judged based on their data visualisation capabilities. That is
+          mainstream now and we can see that across almost all platforms.
+          Instead, the two most important features to consider are : --
+          Integrated support for enterprise reporting capabilities -- Preset
+          analytics We help our clients transform data into actionable insights.
+          We build dashboards & perform ad-hoc analysis that can be stored as
+          templates, or, can be exposed as API's. We analyse the following while
+          recommending and implementing a BI solution : -- Self Service BI, Data
+          Visualisation, Analytics, Ability to connect to multiple Data Sources,
+          Data Blending, Rich Dashboards, Highly Secure, Cloud Vs On-Premise
+        </p></div>
+
+        <div class="solution-heading col-lg-6">
+          <h2 style="margin-left: auto">
+            Stop Judging BI <br />Platforms On Their <br />Data Visualisation<br />
+            Capabilities
+          </h2>
+        </div>
+
+        <div class="solution-image col-lg-6">
+          <img src="./assets/images/solution-image.png" alt="" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <div class="solution-card-points my-5">
+            <h3>MBI & Commerce</h3>
+            <p>
+              Numeral provides 24/7 sales monitoring and notifies you when you
+              reach economic nexus.
+            </p>
+            <div class="solution-card-icon">
+              <img
+                src="./assets/images/solution-card-icon.png"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="solution-card-points my-5">
+            <h3>BI & Finance</h3>
+            <p>
+              Numeral registers your business in all states it has nexus, without you having
+              to do a single phone call.
+            </p>
+            <div class="solution-card-icon">
+              <img
+                src="./assets/images/solution-card-icon-2.png"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="solution-card-points my-5">
+            <h3>BI & Travel, Transportation</h3>
+            <p>
+              Numeral manages your store's tax collection settings to make sure you're
+              collecting at the right rates across the 11,000 tax jurisdictions.
+            </p>
+            <div class="solution-card-icon">
+              <img
+                src="./assets/images/solution-card-icon-3.png"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="solution-card-points">
+            <h3>BI & Healthcare</h3>
+            <p>
+              Numeral automates monthly, quarterly, and annual remittances on your
+              behalf.
+            </p>
+            <div class="solution-card-icon">
+              <img
+                src="./assets/images/solution-card-icon-4.png"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-page-cards-section services-page-container">
+        <div class="card-section-services-content">
+          <h2 class="card-section-services-heading">
+            We Manage & Migrate Traditional Warehouse To Hybrid/Cloud Native
+          </h2>
+          <p class="card-section-services-sub-heading">
+            History reveals that modern data warehouse must leverage the
+            architecture and affordability of the cloud, the flexibility of
+            NoSQL technology and the power of traditional warehouse
+          </p>
+        </div>
+        <div class="services-cards-block">
+          <div class="row" style="row-gap: 20px">
+            <div class="col-lg-3 col-md-12">
+              <div class="services-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/services-page-product-1.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <span class="card-name">Retail Banking</span>
+                <span class="card-description">
+                  Our San Francisco Data Science consultants help reinvent your
+                  business with AI, ML, and Deep Learning solutions.</span
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <div class="services-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/services-page-product-2.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <span class="card-name">Cloud Banking</span>
+                <span class="card-description">
+                  Our San Francisco Data Science consultants help reinvent your
+                  business with AI, ML, and Deep Learning solutions.</span
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <div class="services-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/services-page-product-3.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <span class="card-name">Advanced Analytics</span>
+                <span class="card-description">
+                  Our San Francisco Data Science consultants help reinvent your
+                  business with AI, ML, and Deep Learning solutions.</span
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <div class="services-card">
+                <div class="service-card-image">
+                  <img
+                    src="./assets/images/services-page-product-4.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <span class="card-name">Digital On-boarding</span>
+                <span class="card-description">
+                  Our San Francisco Data Science consultants help reinvent your
+                  business with AI, ML, and Deep Learning solutions.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-information service-page-product-information">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="product-description-content">
+              <h2 class="products-desciption-heading">
+                Cloud Data Engineer & DevOps Profiling
+              </h2>
+              <div class="product-description-points">
+                <span>
+                  <p class="my-5">
+                    Our Big Data Engineers build real-time event driven
+                    architectures,setup-up and run big data clusters, implement
+                    data ingestion,present and generate data catalogues from the
+                    metadata repository. They could be responsible for your
+                    ingestion through to supporting a self service consumption
+                    of data within a Spark/HDFS Data that could be hosted on a
+                    AWS/Azure/GCP using Cloudera/Hortonworks distribution. Our
+                    DevOps Engineers help manage and scale the data architecture
+                    built by developers. They have experience working with
+                    high-scale, low-latency NoSQL technology in agile
+                    environments. They love learning new technologies and
+                    statistical models and figure out the most efficient ways to
+                    manage multiple database clusters, hundreds of hosts, and
+                    millions of operations per second (in aggregate). They
+                    maintain models and improve software to enable scale.
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/product-section-image.png"
+              class="product-section-image"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="coordinates-section">
+        <h3 class="coordinates-heading">
+          Our Coordinates? <br />
+          Let’s Find Out.
+        </h3>
+        <div class="coordinates-points my-3">
+          <div class="point">
+            <img
+              src="./assets/images/right-2.png"
+              alt="coordinates-points-image"
+              loading="lazy"
+            />
+            <p>Build a highly engaged audience</p>
+          </div>
+          <div class="point">
+            <img
+              src="./assets/images/right-2.png"
+              alt="coordinates-points-image"
+              loading="lazy"
+            />
+            <p>Get more leads</p>
+          </div>
+          <div class="point">
+            <img
+              src="./assets/images/right-2.png"
+              alt="coordinates-points-image"
+              loading="lazy"
+            />
+            <p>Close more clients</p>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary btn-lg my-5"
+          >Guarantee Your Success &nbsp ></a
+        >
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer industries-footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-brand col-lg-3 col-sm-6">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/muoro-logo.svg"
+                alt="Adex home"
+                loading="lazy"
+                width="73"
+                height="76"
+              />
+            </a>
+            <p class="footer-text">
+              Let’s code your <br />
+              digital <br />
+              engineering <br />projects. 
+            </p>
+            <p class="footer-text">
+              &copy; 2024 muoro. <br />
+              All rights reserved.
+            </p>
+          </div>
+
+          <ul class="social-list col-lg-3 col-sm-6">
+            <li>
+              <p
+                class="h4 footer-list-title"
+                style="font-size: 20px; font-weight: 600"
+              >
+                Follow Us
+              </p>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-dribbble"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list col-lg-3 col-sm-6">
+            <li>
+              <p
+                class="h4 footer-list-title"
+                style="font-size: 20px; font-weight: 600"
+              >
+                Contact
+              </p>
+            </li>
+
+            <li>
+              <address class="footer-text">
+                Address : 4-5 Main road, Delhi
+              </address>
+            </li>
+
+            <li>
+              <a href="mailto:info@email.com" class="footer-link"
+                >connect@muoro.io</a
+              >
+            </li>
+
+            <li>
+              <a href="tel:001234567890" class="footer-link"
+                >(+91) 813-083-4172</a
+              >
+            </li>
+          </ul>
+
+          <ul class="footer-list col-lg-3 col-sm-6">
+            <li>
+              <p
+                class="h4 footer-list-title"
+                style="font-size: 20px; font-weight: 600"
+              >
+                Useful Links
+              </p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Our Story</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Projects</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/mail.js"></script>
+    <!-- 
+  - ionicon
+-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

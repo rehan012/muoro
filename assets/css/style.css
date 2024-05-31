@@ -319,6 +319,7 @@ label {
   padding-block: 10px;
   box-shadow: var(--shadow-1);
   z-index: 4;
+  background: white;
 }
 
 .hero-highlighter-div {
@@ -792,13 +793,23 @@ label {
   background-color: #507ecb42;
 }
 
+/*This is for banking section card*/
+.odd-card {
+  background-color: #507ecb42;
+}
+.even-card {
+  background-color: var(--blue);
+  span {
+    color: white;
+  }
+}
+
 .card .card-content {
   display: flex;
   flex-direction: column;
   align-items: start;
   padding: 30px;
   position: relative;
-  z-index: 100;
 }
 
 section .card .image {
@@ -820,7 +831,7 @@ section .card .image img {
 .card .name-profession {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  text-align: start;
   margin-top: 10px;
   color: var(--title-black);
 }
@@ -994,6 +1005,703 @@ section .card .image img {
 }
 
 /*-----------------------------------*\
+  #INDUSTRIES PAGE START
+\*-----------------------------------*/
+
+/**Reusable styles **/
+.industries-container p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000000;
+}
+/**Reusable styles **/
+
+.industries-container {
+  padding: 0 20px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.industries-hero-content {
+  flex: 1;
+}
+
+.industries-hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  img {
+    width: 100%;
+  }
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Ensure image doesn't overflow its container */
+}
+
+.hero-section h1 {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 116px;
+  color: #000000;
+}
+
+.hero-section p {
+  text-align: left;
+  margin: 36px 0 100px 0;
+}
+
+.banking-section {
+  position: relative; /* Required for positioning the pseudo-element */
+  text-align: center;
+  display: flex;
+  padding: 120px 0;
+  gap: 10px;
+}
+
+.banking-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.banking-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/banking-section-bg-image.webp");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.05; /* Apply opacity to the pseudo-element */
+  z-index: 1; /* Place behind the content */
+  pointer-events: none; /* Ensure it doesn't interfere with user interactions */
+}
+
+.banking-section .banking-content {
+  position: relative;
+  z-index: 2; /* Place the content above the background image */
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.banking-section h2 {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 79.86px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #0f1534;
+}
+.banking-section p {
+  text-align: center;
+}
+
+.banking-section .card {
+  margin-top: 20px;
+  min-height: 360px;
+}
+
+.services-section {
+  padding: 120px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  color: #0f1534;
+}
+.services-container {
+  display: flex;
+  gap: 320px;
+  padding: 50px 0;
+}
+
+.services-section h2 {
+  text-align: center;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 73.04px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.industries-services-content {
+  flex: 3;
+  margin: auto 0;
+  h3 {
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 79.86px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+  p {
+    margin: 20px 0 48px 0;
+  }
+  .industries-service-images {
+    flex: 1;
+  }
+}
+
+.industries-services-image-2 {
+  position: absolute;
+  top: 54px;
+  right: 460px;
+}
+.industries-services-image-3 {
+  position: absolute;
+  bottom: 0px;
+  right: -170px;
+}
+.industries-services-image-4 {
+  position: absolute;
+  top: 0px;
+  right: -54px;
+}
+
+.service-cards-block {
+  padding: 50px 20px 0 20px;
+}
+
+.services-card {
+  border: 2px solid #eae8e8;
+  border-radius: 16px;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 350px;
+}
+.services-card .card-name {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.05px;
+  color: #4773d1;
+}
+
+.services-card .card-description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30.3px;
+  letter-spacing: -0.02em;
+  color: #636363;
+}
+
+.values-added-services-section {
+  padding: 120px 110px;
+  background-color: #d1ddf1;
+}
+.value-added-image {
+  width: 85%;
+  margin: 0 auto;
+}
+.value-added-content {
+  text-align: left;
+}
+
+.value-added-heading {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 79.86px;
+  letter-spacing: -0.02em;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.value-added-list {
+  list-style: none;
+  padding: 0;
+}
+
+.value-added-list li {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.value-added-list span {
+  margin-top: -5px;
+  display: inline;
+}
+
+.value-added-item-heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38.41px;
+  color: #4773d1;
+}
+
+.value-added-item-description {
+  margin-left: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38.41px;
+  color: #636363;
+}
+
+.status-neo-description {
+  padding: 120px 50px 120px 50px;
+  background: #4773d1;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+/**Empower Section */
+.empower-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 120px 20px;
+  gap: 50px;
+}
+
+.empower-heading {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 79.86px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #0f1534;
+}
+
+.empower-section .card {
+  border: none;
+  border-radius: unset;
+  box-shadow: none;
+}
+
+.empower-section .card-content {
+  gap: 30px;
+}
+.empower-section .name-profession {
+  gap: 15px;
+}
+
+.empower-section .odd-card {
+  border-radius: 15px;
+}
+.empower-learn-more {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 31.76px;
+  text-align: left;
+  color: #636363;
+}
+.right-arrow {
+  width: 30px;
+  background: #4773d1;
+  color: white;
+  border-radius: 50%;
+  align-self: end;
+  text-align: center;
+}
+
+.empower-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.empower-card-content .card-heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42.39px;
+  text-align: left;
+  color: #4773d1;
+}
+
+.empower-card-content .card-description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31.76px;
+  text-align: left;
+  color: #636363;
+}
+
+/**Product Information**/
+.product-information {
+  padding: 80px 40px;
+  background: #4773d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-section-image {
+  width: 100%;
+  margin: 0 auto;
+}
+.product-description-content {
+  margin-top: 50px;
+
+  p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38.41px;
+    text-align: left;
+    color: white;
+  }
+}
+.products-desciption-heading {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 79.86px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  text-align: left;
+}
+.product-description-points span {
+  display: flex;
+  gap: 30px;
+  img {
+    height: fit-content;
+    margin: auto 0;
+  }
+  p {
+    font-weight: 400;
+  }
+}
+/*Industry-insights*/
+.industry-insights {
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d1ddf1;
+}
+.insights-heading {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 79.86px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #000000;
+}
+.insights-sub-heading {
+  margin: 30px 0 80px 0;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+.insights-card-container {
+  width: 90%;
+  row-gap: 70px;
+}
+.insights-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.card-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background: var(--blue);
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  min-height: 450px;
+}
+.card-image img {
+  width: 100%;
+}
+.card-text {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  padding: 20px 40px;
+}
+.card-tag {
+  position: absolute;
+  left: -32px;
+  top: -5.5rem;
+  border-radius: 20px;
+  color: white;
+  padding: 24px;
+  max-width: 70%;
+  p {
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0.9599999785423279px;
+    text-align: left;
+  }
+}
+
+/*coordinates-section*/
+.coordinates-section {
+  padding: 120px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+.coordinates-heading {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 75.21px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.coordinates-points {
+  display: flex;
+  gap: 60px;
+}
+.point {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.41px;
+    text-align: left;
+    color: #4773d1;
+    margin-bottom: 0;
+  }
+}
+.industries-footer {
+  background-color: #d1ddf1;
+  a {
+    color: gray;
+  }
+}
+
+/*-----------------------------------*\
+  #INDUSTRIES PAGE END
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #SERVICES  PAGE START
+\*-----------------------------------*/
+.services-page-container {
+  padding: 120px 40px;
+}
+.services-page-container.service-hero {
+  background-color: #d1ddf1;
+  position: relative;
+}
+.services-page-container h1 {
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 116px;
+  letter-spacing: -0.8799999952316284px;
+  text-align: center;
+}
+.services-page-container h2 {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 79.86px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.services-page-container h3 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -1.600000023841858px;
+  text-align: left;
+}
+
+.services-page-container p {
+  font-size: 24px;
+  line-height: 36px;
+}
+.services-hero-section p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+.highlight {
+  display: inline;
+  background-color: var(--blue);
+  color: white;
+}
+.services-hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  min-height: 900px;
+  padding-top: 200px;
+}
+.service-hero-image {
+  position: absolute;
+  top: 820px;
+
+  img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.product-information.service-page-product-information {
+  img {
+    width: 80%;
+  }
+}
+.services-page-container {
+  .services-card {
+    border: none;
+    gap: 20px;
+  }
+}
+.card-section-services-heading {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 79.86px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #000000;
+}
+.card-section-services-sub-heading {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  margin: 20px 0 70px 0;
+}
+.talk-to-us {
+  background-color: var(--blue);
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    color: white;
+  }
+  a {
+    background-color: white;
+    color: var(--blue);
+  }
+}
+
+.services-provided-card {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px 50px 40px;
+  border-radius: 20px;
+  background: #4773d1;
+  justify-content: center;
+  align-items: center;
+  min-height: 270px;
+}
+.card-number {
+  font-size: 82px;
+  font-weight: 400;
+  line-height: 130px;
+  text-align: center;
+  color: #f6f6f699;
+}
+.card-service {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: white;
+}
+.services-provided-description {
+  font-weight: 400;
+  text-align: center;
+  color: #808080;
+  margin: 30px 0;
+}
+
+.solution-section {
+  background: #f5f6f7;
+  row-gap: 100px;
+}
+
+.solution-heading h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -1.600000023841858px;
+  text-align: left;
+  color: #1a2b3b;
+  width: fit-content;
+}
+
+.solution-image {
+  img {
+    width: 100%;
+  }
+}
+.solution-block-text {
+  padding: 32px;
+  border-radius: 4px;
+  border: 1px;
+  background-color: white;
+  color: #1a2b3b;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+}
+.solution-card-points {
+  padding: 32px;
+  border-radius: 4px;
+  border: 1px;
+  background-color: white;
+  color: #1a2b3b;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  position: relative;
+}
+.solution-card-icon {
+  position: relative;
+  left: -46px;
+  bottom: 131px;
+}
+
+/*-----------------------------------*\
+  #SERVICES  PAGE END
+\*-----------------------------------*/
+
+/*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
 
@@ -1016,10 +1724,9 @@ section .card .image img {
 
   .hero-title {
     font-size: 45px;
-    line-height: 60px;
+    line-height: 45px;
     text-align: center;
   }
-
   .hero-highlighter-img {
     width: 200px;
     height: 50px;
@@ -1028,7 +1735,7 @@ section .card .image img {
 
   .h2.section-title {
     font-size: 45px;
-    line-height: 60px;
+    line-height: 45px;
   }
 
   .industries-menu.dropdown-active {
@@ -1130,6 +1837,234 @@ section .card .image img {
   }
 }
 
+/**
+ * responsive for less than 768px screen
+ */
+
+@media (max-width: 768px) or (min-width: 768px) {
+  /**INDUSTRIES PAGE **/
+
+  /*hero section*/
+  .hero-section h1 {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .hero-section p {
+    font-size: 20px;
+    text-align: center;
+    margin: 25px 0 40px 0;
+    line-height: 32px;
+  }
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-container .industries-hero-image {
+    img {
+      margin-top: 20px;
+    }
+  }
+  /*hero section*/
+
+  /*banking section*/
+  .banking-section h2 {
+    line-height: 60px;
+    font-size: 48px;
+  }
+  .banking-section p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .banking-text {
+    margin-bottom: 0;
+  }
+
+  /*banking section*/
+
+  /*Services Section*/
+  .services-section {
+    gap: 35px;
+  }
+
+  .services-section h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .services-container {
+    display: flex;
+    gap: 50px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .industries-services-content h3 {
+    text-align: center;
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .industries-services-content p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .industries-services-main-image {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .industries-services-image-2 {
+    display: none;
+  }
+  .industries-services-image-3 {
+    display: none;
+  }
+  .industries-services-image-4 {
+    display: none;
+  }
+
+  .services-card {
+    min-height: fit-content;
+  }
+  .values-added-services-section {
+    padding: 20px 20px;
+  }
+  .value-added-heading {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .value-added-item-description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .status-neo-description {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 120px 20px;
+  }
+  .services-card {
+    padding: 20px 20px;
+  }
+
+  /*Services Section*/
+  /**Empower Section */
+  .empower-heading {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  /**products-section*/
+  .products-desciption-heading {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .product-description-content p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  /*Insight*/
+  .insights-heading {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .insights-sub-heading {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .insights-card {
+    width: 100%;
+  }
+  .card-text {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  /*coordinates-section*/
+  .coordinates-heading {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .coordinates-points {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .point {
+    align-items: start;
+    margin-top: 40px;
+  }
+  /**INDUSTRIES PAGE **/
+}
+/*SERVICES PAGE*/
+.services-page-container {
+  padding: 80px 20px;
+}
+
+.services-page-container h1 {
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+}
+.services-page-container h2 {
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+}
+.services-page-container h3 {
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+}
+.services-page-container p {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+.services-hero-section p {
+  font-size: 20px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.services-hero-section {
+  min-height: fit-content;
+  padding-top: 50px;
+}
+.services-page-container.service-hero {
+  position: unset;
+}
+
+.service-hero-image {
+  position: unset;
+  margin-top: 40px;
+  img {
+    width: 100%;
+  }
+}
+.talk-to-us {
+  flex-direction: column;
+  p {
+    font-size: 28px;
+  }
+}
+.solution-section {
+  row-gap: 50px;
+}
+.solution-card-points h3 {
+  font-size: 38px;
+}
+.product-information.service-page-product-information {
+  h2,
+  p {
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }
+}
+.solution-heading h2 {
+  width: 100%;
+}
 /**
  * responsive for large than 768px screen
  */
@@ -1368,6 +2303,99 @@ section .card .image img {
   .footer .grid-list {
     grid-template-columns: repeat(4, 1fr);
   }
+  /**INDUSTRIES PAGE**/
+  .hero-container {
+    flex-direction: row;
+    text-align: left;
+  }
+  .hero-section h1 {
+    font-size: 70px;
+    line-height: 75px;
+    text-align: left;
+  }
+  .hero-section p {
+    font-size: 20px;
+    text-align: left;
+    line-height: 34px;
+  }
+  .industries-services-content {
+    flex: 1;
+  }
+  .industries-services-images {
+    flex: 1;
+  }
+  .services-container {
+    flex-direction: row;
+    gap: 30px;
+    text-align: left;
+  }
+  .industries-services-content h3 {
+    text-align: left;
+  }
+  .industries-services-main-image {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 50px;
+  }
+  .industries-services-image-2 {
+    display: block;
+    width: 45%;
+    top: 40px;
+    left: -63px;
+  }
+  .industries-services-image-3 {
+    display: block;
+    width: 35%;
+    bottom: 79px;
+    left: 296px;
+  }
+  .industries-services-image-4 {
+    display: block;
+    width: 30%;
+    right: 10px;
+  }
+  .services-card {
+    padding: 20px 20px;
+    min-height: 450px;
+  }
+  .value-added-heading {
+    text-align: left;
+  }
+  .coordinates-points {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  /**INDUSTRIES PAGE**/
+  /**SERVICES PAGE **/
+  .services-page-container.service-hero {
+    position: relative;
+    padding: 200px 20px 500px 20px;
+  }
+
+  .service-hero-image {
+    position: absolute;
+    top: 540px;
+    img {
+      width: 80%;
+    }
+  }
+  .services-provided {
+    margin-top: 250px;
+  }
+  .solution-block-text p {
+    text-align: left;
+  }
+  .product-information.service-page-product-information {
+    h2,
+    p {
+      text-align: left;
+    }
+  }
+  .solution-heading h2 {
+    width: fit-content;
+    text-align: left;
+  }
 }
 
 /**
@@ -1427,6 +2455,104 @@ section .card .image img {
     padding-inline-end: 80px;
     margin-block-end: 16px;
   }
+  /*INDUSTRIES PAGE*/
+  .hero-section h1 {
+    font-size: 105px;
+    line-height: 100px;
+    text-align: left;
+  }
+
+  .hero-section p {
+    font-size: 24px;
+    text-align: left;
+    line-height: 36px;
+  }
+  .banking-section p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .banking-section h2 {
+    line-height: 70px;
+    font-size: 70px;
+  }
+  .services-section h2 {
+    line-height: 70px;
+    font-size: 70px;
+  }
+
+  .industries-services-content h3 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .value-added-heading {
+    font-size: 60px;
+
+    line-height: 70px;
+  }
+  .industries-services-image-3 {
+    bottom: -20px;
+    left: 489px;
+  }
+  .services-card {
+    min-height: 360px;
+  }
+  .empower-heading {
+    line-height: 70px;
+    font-size: 70px;
+  }
+  .products-desciption-heading {
+    line-height: 70px;
+    font-size: 70px;
+  }
+  .insights-heading {
+    line-height: 70px;
+    font-size: 70px;
+  }
+  .coordinates-heading {
+    line-height: 70px;
+    font-size: 70px;
+  }
+  .product-description-content p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .insights-sub-heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  /*INDUSTRIES PAGE*/
+  /**SERVICES PAGE**/
+  .services-page-container h1 {
+    font-size: 90px;
+    line-height: 90px;
+  }
+  .services-page-container h2 {
+    line-height: 70px;
+    font-size: 70px;
+  }
+  .services-page-container h3 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .services-page-container p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .service-hero-image {
+    top: 700px;
+  }
+  .services-provided {
+    margin-top: 250px;
+  }
+  .solution-heading h2 {
+    line-height: 60px;
+    font-size: 48px;
+  }
+  .services-provided-card {
+    min-height: 300px;
+  }
 }
 
 /**
@@ -1441,6 +2567,13 @@ section .card .image img {
   .container {
     max-width: 1320px;
   }
+  .industries-container {
+    margin: 0 80px;
+  }
 
- 
+  @media (min-width: 1900px) {
+    .industries-container {
+      margin: 0 110px;
+    }
+  }
 }
