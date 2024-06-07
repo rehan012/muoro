@@ -31,8 +31,17 @@
     <!-- 
     - google font link
   -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" media="screen,print" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin media="screen,print" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      media="screen,print"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+      media="screen,print"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -52,16 +61,14 @@
     <!-- 
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/style.css"  media="screen,print" />
+    <link rel="stylesheet" href="./assets/css/style.css" media="screen,print" />
 
     <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href="./assets/images/hero.webp" />
-  <link rel="preload" as="image" href="./assets/images/hero_mobile.webp" />
-  <link rel="preload" as="image" href="./assets/images/Line.webp" />
-
-
+    <link rel="preload" as="image" href="./assets/images/hero.webp" />
+    <link rel="preload" as="image" href="./assets/images/hero_mobile.webp" />
+    <link rel="preload" as="image" href="./assets/images/Line.webp" />
   </head>
 
   <body>
@@ -133,7 +140,9 @@
             </li>
 
             <li>
-              <a href="industries.html" class="navbar-link industries-menu">Industries</a>
+              <a href="industries.html" class="navbar-link industries-menu"
+                >Industries</a
+              >
             </li>
 
             <li>
@@ -164,200 +173,105 @@
     </header>
 
     <main>
-      
-        <!-- 
+      <!-- 
         - #HERO
       -->
 
-        <section
-          class="section hero"
-          aria-label="home"
-          style="position: relative"
-        >
-          <div class="container">
-            <div class="hero-content">
-              <h1 class="h1 hero-title" style="position: relative">
-                <span style="z-index: 1000">
-                  Unleash digital product engineering like never
-                  <span class="hero-highlighter-div">
-                    before.
-                    <img
-                      class="hero-highlighter-img"
-                      src="./assets/images/Line.webp"
-                      alt=""
-                      width="459"
-                      height="112"
-                      loading="lazy"
-                    />
-                  </span>
+      <section
+        class="section hero"
+        aria-label="home"
+        style="position: relative"
+      >
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="h1 hero-title" style="position: relative">
+              <span style="z-index: 1000">
+                Unleash digital product engineering like never
+                <span class="hero-highlighter-div">
+                  before.
+                  <img
+                    class="hero-highlighter-img"
+                    src="./assets/images/Line.webp"
+                    alt=""
+                    width="459"
+                    height="112"
+                    loading="lazy"
+                  />
                 </span>
-              </h1>
+              </span>
+            </h1>
 
-              <p class="hero-text">
-                We’re a creative company that focuses on establishing long-term
-                relationships with customers.Don't let your vision remain a
-                dream. Muoro bridges the gap between brilliant ideas and
-                industry-leading digital applications. Let's build something
-                disruptive and remarkable together. 
-              </p>
-            </div>
-            <!-- talk to expert form -->
-            <div id="expert-modal" class="modal hidden">
-              <div class="expert-modal-content">
-                <form
-                  class="expert-form"
-                  id="myForm"
-                  action="https://api.web3forms.com/submit"
-                >
-                  <div class="row">
-                    <h3
-                      class="form-title col-lg-10"
-                      style="text-align: left; font-size: 24px"
-                    >
-                      Talk to an expert:
-                    </h3>
-                    <span
-                      class="expert-close-btn col-lg-1"
-                      style="margin-left: auto"
-                      >&times;</span
-                    >
-                  </div>
-
-                  <input
-                    type="hidden"
-                    name="from_name"
-                    value="New Form Submitted"
-                  />
-
-                  <label for="expert-form-name">Name *</label>
-                  <input
-                    type="text"
-                    id="expert-form-name"
-                    name="Name"
-                    placeholder="Enter Your Name"
-                    required
-                  />
-                  <label for="expert-form-phone">Phone</label>
-                  <input
-                    type="number"
-                    id="expert-form-phone"
-                    name="Phone"
-                    placeholder="Phone Number"
-                  />
-                  <label for="expert-form-email">Email *</label>
-                  <input
-                    type="email"
-                    id="expert-form-email"
-                    name="Email"
-                    placeholder="Enter Your Email"
-                    required
-                  />
-                  <label for="expert-form-country">Country</label>
-                  <input
-                    type="text"
-                    id="expert-form-country"
-                    name="Country"
-                    placeholder="Enter Your Country"
-                  />
-                  <label for="expert-form-requirement">How Can We Help You? *</label>
-                  <textarea
-                    id="expert-form-requirement"
-                    name="Requirement"
-                    placeholder="Your Requirement"
-                    required
-                  ></textarea>
-
-                  <input
-                    type="hidden"
-                    name="subject"
-                    value="Enquiry from Page: {Muoro New Website}"
-                  />
-
-                  <div class="h-captcha" data-captcha="false"></div>
-
-                  <button
-                    class="btn btn-primary"
-                    type="submit"
-                    style="width: 100%; padding: 8px 20px; border-radius: 10px"
-                  >
-                    TALK TO AN EXPERT
-                  </button>
-                </form>
-              </div>
-            </div>
+            <p class="hero-text">
+              We’re a creative company that focuses on establishing long-term
+              relationships with customers.Don't let your vision remain a dream.
+              Muoro bridges the gap between brilliant ideas and industry-leading
+              digital applications. Let's build something disruptive and
+              remarkable together. 
+            </p>
           </div>
-          <!-- contact us form -->
-          <div id="modal" class="modal hidden">
-            <div class="modal-content">
-              <div class="row">
-                <h3 class="col-lg-11 form-title">Send us your Details !</h3>
-                <span class="close-btn col-lg-1" style="margin-left: auto"
-                  >&times;</span
-                >
-              </div>
+          <!-- talk to expert form -->
+          <div id="expert-modal" class="modal hidden">
+            <div class="expert-modal-content">
+              <form
+                class="expert-form"
+                id="myForm"
+                action="https://api.web3forms.com/submit"
+              >
+                <div class="row">
+                  <h3
+                    class="form-title col-lg-10"
+                    style="text-align: left; font-size: 24px"
+                  >
+                    Talk to an expert:
+                  </h3>
+                  <span
+                    class="expert-close-btn col-lg-1"
+                    style="margin-left: auto"
+                    >&times;</span
+                  >
+                </div>
 
-              <form id="myContactForm" method="POST">
-                <input
-                  type="hidden"
-                  name="access_key"
-                  id="access_key"
-                  value="9a98cd55-b20c-4b11-882c-2ca3ea03a495"
-                />
                 <input
                   type="hidden"
                   name="from_name"
-                  id="from_name"
                   value="New Form Submitted"
                 />
 
-                <div class="row">
-                  <div class="col-lg">
-                    <label for="name">Name *</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="Name"
-                      placeholder="Enter Your Name"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-lg">
-                    <label for="organisation">Organisation *</label>
-                    <input
-                      type="text"
-                      id="organisation"
-                      name="Organisation"
-                      placeholder="Enter Your Organisation"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg">
-                    <label for="phone">Phone *</label>
-                    <input
-                      type="number"
-                      id="phone"
-                      name="Phone"
-                      placeholder="Phone Number"
-                      required
-                    />
-                  </div>
-                  <div class="col-lg">
-                    <label for="email">Email *</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="Email"
-                      placeholder="Enter Your Email"
-                      required
-                    />
-                  </div>
-                </div>
-                <label for="requirement">Requirement</label>
+                <label for="expert-form-name">Name *</label>
+                <input
+                  type="text"
+                  id="expert-form-name"
+                  name="Name"
+                  placeholder="Enter Your Name"
+                  required
+                />
+                <label for="expert-form-phone">Phone</label>
+                <input
+                  type="number"
+                  id="expert-form-phone"
+                  name="Phone"
+                  placeholder="Phone Number"
+                />
+                <label for="expert-form-email">Email *</label>
+                <input
+                  type="email"
+                  id="expert-form-email"
+                  name="Email"
+                  placeholder="Enter Your Email"
+                  required
+                />
+                <label for="expert-form-country">Country</label>
+                <input
+                  type="text"
+                  id="expert-form-country"
+                  name="Country"
+                  placeholder="Enter Your Country"
+                />
+                <label for="expert-form-requirement"
+                  >How Can We Help You? *</label
+                >
                 <textarea
-                  id="requirement"
+                  id="expert-form-requirement"
                   name="Requirement"
                   placeholder="Your Requirement"
                   required
@@ -366,460 +280,583 @@
                 <input
                   type="hidden"
                   name="subject"
-                  id="subject"
                   value="Enquiry from Page: {Muoro New Website}"
                 />
 
                 <div class="h-captcha" data-captcha="false"></div>
 
                 <button
+                  class="btn btn-primary"
                   type="submit"
-                  class="btn btn-primary col-lg-2"
-                  style="padding: 12px 15px"
+                  style="width: 100%; padding: 8px 20px; border-radius: 10px"
                 >
-                  Submit
+                  TALK TO AN EXPERT
                 </button>
               </form>
             </div>
           </div>
+        </div>
+        <!-- contact us form -->
+        <div id="modal" class="modal hidden">
+          <div class="modal-content">
+            <div class="row">
+              <h3 class="col-lg-11 form-title">Send us your Details !</h3>
+              <span class="close-btn col-lg-1" style="margin-left: auto"
+                >&times;</span
+              >
+            </div>
 
-          <button id="contact-expert-btn" class="btn-danger contact-expert-btn">
-            Talk to an expert
-          </button>
-        </section>
+            <form id="myContactForm" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                id="access_key"
+                value="9a98cd55-b20c-4b11-882c-2ca3ea03a495"
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                id="from_name"
+                value="New Form Submitted"
+              />
 
-        <!-- 
+              <div class="row">
+                <div class="col-lg">
+                  <label for="name">Name *</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="Name"
+                    placeholder="Enter Your Name"
+                    required
+                  />
+                </div>
+
+                <div class="col-lg">
+                  <label for="organisation">Organisation *</label>
+                  <input
+                    type="text"
+                    id="organisation"
+                    name="Organisation"
+                    placeholder="Enter Your Organisation"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg">
+                  <label for="phone">Phone *</label>
+                  <input
+                    type="number"
+                    id="phone"
+                    name="Phone"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+                <div class="col-lg">
+                  <label for="email">Email *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="Email"
+                    placeholder="Enter Your Email"
+                    required
+                  />
+                </div>
+              </div>
+              <label for="requirement">Requirement</label>
+              <textarea
+                id="requirement"
+                name="Requirement"
+                placeholder="Your Requirement"
+                required
+              ></textarea>
+
+              <input
+                type="hidden"
+                name="subject"
+                id="subject"
+                value="Enquiry from Page: {Muoro New Website}"
+              />
+
+              <div class="h-captcha" data-captcha="false"></div>
+
+              <button
+                type="submit"
+                class="btn btn-primary col-lg-2"
+                style="padding: 12px 15px"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <button id="contact-expert-btn" class="btn-danger contact-expert-btn">
+          Talk to an expert
+        </button>
+      </section>
+
+      <!-- 
         - #SERVICE
       -->
 
-        <section class="section service" aria-labelledby="service-label">
-          <div class="container">
-            <h2
-              id="service-label"
-              class="h2 section-title"
-              style="position: relative"
-            >
-              Why digital engineering<br />with Muoro?
-              <img
-                src="./assets/images/Vector.png"
-                alt=""
-                class="service-highlighter-img"
-                loading="lazy"
-              />
-            </h2>
-
-            <ul class="row g-5 ps-0">
-              <li class="col-lg-4">
-                <div class="project-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 560; --height: 350"
-                  >
-                    <img
-                      src="./assets/images/Rectangle25.webp"
-                      width="560"
-                      height="350"
-                      loading="lazy"
-                      alt="Project card image 1"
-                      class="img-cover"
-                     
-                    />
-                  </figure>
-
-                  <div class="card-content d-flex flex-column align-items-center">
-                    <h3 class="h3">
-                      <a href="#" class="card-title-home">Industry Recognition</a>
-                    </h3>
-
-                    <p class="card-text-home">
-                      Muoro's engineers worked seamlessly with our global teams
-                      to deliver a new video streaming platform on an aggressive
-                      timeline.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="col-lg-4">
-                <div class="project-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 560; --height: 350"
-                  >
-                    <img
-                      src="./assets/images/Rectangle25.webp"
-                      width="560"
-                      height="350"
-                      loading="lazy"
-                      alt="Project card image 2"
-                      class="img-cover"
-                      
-                    />
-                  </figure>
-
-                  <div class="card-content d-flex flex-column align-items-center">
-                    <h3 class="h3">
-                      <a href="#" class="card-title-home">Innovation at Play</a>
-                    </h3>
-
-                    <p class="card-text-home">
-                      The quality of their software development process was
-                      second to none. Would definitely hire Muoro again for my
-                      future endeavors.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="col-lg-4">
-                <div class="project-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 560; --height: 350"
-                  >
-                    <img
-                      src="./assets/images/Rectangle25.webp"
-                      width="560"
-                      height="350"
-                      loading="lazy"
-                      alt="Project card image 3"
-                      class="img-cover"
-                    />
-                  </figure>
-
-                  <div class="card-content d-flex flex-column align-items-center">
-                    <h3 class="h3">
-                      <a href="#" class="card-title-home">Global Footprint</a>
-                    </h3>
-
-                    <p class="card-text-home">
-                      The quality of their software development process was
-                      second to none. Would definitely hire Muoro again for my
-                      future endeavors.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- 
-        - #ABOUT
-      -->
-
-        <section class="about" aria-labelledby="about-label">
-          <div class="container">
-            <div class="about-content-img" style="position: relative">
-              <img
-                src="./assets/images/Remove-bg2.webp"
-                class="about-content-left-bulb-img"
-                loading="lazy"
-                alt="about banner"
-              />
-              <figure class="about-banner">
-                <img
-                  src="./assets/images/research.webp"
-                  loading="lazy"
-                  alt="about banner"
-                  class="about-img"
-                  width="518"
-                  height="515"
-                />
-              </figure>
-              <img
-                src="./assets/images/Remove-bg1.png"
-                class="about-content-right-bulb-img"
-                loading="lazy"
-                alt="about banner"
-              />
-            </div>
-
-            <div class="about-content">
-              <h2 id="about-label" class="about-title">Muoro’s Deal</h2>
-              <p class="about-para">
-                Muoro is a top digital engineering partner that specializes in
-                cutting-edge technologies including AI/ML, cloud, SaaS,
-                blockchain, and more. Muoro, which is dedicated to speeding
-                modernization and innovation, provides value at scale to digital
-                natives and multinational companies. Our capabilities and years
-                of experience allow us to excel in both engineering and
-                management.
-              </p>
-
-              <button class="btn btn-primary btn-lg w-50">View</button>
-            </div>
-          </div>
-        </section>
-
-        <!-- 
-        - #STATS
-      -->
-
-        <section class="container" aria-label="our stats">
-          <div class="stats-container">
-            <div class="stats-item">
-              <div class="stats-item-title">200k+</div>
-              <div class="stats-item-para">in app transfer</div>
-            </div>
-            <div class="stats-item">
-              <div class="stats-item-title">75%</div>
-              <div class="stats-item-para">performance improve</div>
-            </div>
-            <div class="stats-item">
-              <div class="stats-item-title">110</div>
-              <div class="stats-item-para">companies</div>
-            </div>
-          </div>
-        </section>
-
-        <!-- 
-        - #clients
-      -->
-
-        <section class="testimonial-container container">
-          <h3 class="testimonial-title">
-            Here’s what our client have to say about us:
-          </h3>
-          <div class="testimonial-section">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper content">
-                <div class="swiper-slide card testimonial-card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="./assets/images/profile1.webp" alt="" loading="lazy"/>
-                    </div>
-                    <div class="name-profession">
-                      <span class="name">Someone Name</span>
-                      <span class="profession"
-                        >Muoro's engineers worked seamlessly with our global
-                        teams to deliver a new video streaming platform on an
-                        aggressive timeline.
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide card testimonial-card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="./assets/images/profile2.webp" alt="" loading="lazy" />
-                    </div>
-
-                    <div class="name-profession">
-                      <span class="name">Someone Name</span>
-                      <span class="profession"
-                        >Muoro's engineers worked seamlessly with our global
-                        teams to deliver a new video streaming platform on an
-                        aggressive timeline.</span
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide card testimonial-card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="./assets/images/profile3.webp" alt="" loading="lazy" />
-                    </div>
-
-                    <div class="name-profession">
-                      <span class="name">Someone Name</span>
-                      <span class="profession"
-                        >Muoro's engineers worked seamlessly with our global
-                        teams to deliver a new video streaming platform on an
-                        aggressive timeline.</span
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide card testimonial-card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="./assets/images/profile4.webp" alt="" loading="lazy"/>
-                    </div>
-
-                    <div class="name-profession">
-                      <span class="name">Someone Name</span>
-                      <span class="profession"
-                        >Muoro's engineers worked seamlessly with our global
-                        teams to deliver a new video streaming platform on an
-                        aggressive timeline.</span
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide card testimonial-card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="./assets/images/profile5.webp" alt="" loading="lazy"/>
-                    </div>
-                    <div class="name-profession">
-                      <span class="name">Someone Name</span>
-                      <span class="profession"
-                        >Muoro's engineers worked seamlessly with our global
-                        teams to deliver a new video streaming platform on an
-                        aggressive timeline.</span
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide card testimonial-card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="./assets/images/profile6.webp" alt="" loading="lazy"/>
-                    </div>
-                    <div class="name-profession">
-                      <span class="name">Someone Name</span>
-                      <span class="profession"
-                        >Muoro's engineers worked seamlessly with our global
-                        teams to deliver a new video streaming platform on an
-                        aggressive timeline.</span
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide card testimonial-card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="./assets/images/profile7.webp" alt="" loading="lazy"/>
-                    </div>
-                    <div class="name-profession">
-                      <span class="name">Someone Name</span>
-                      <span class="profession"
-                        >Muoro's engineers worked seamlessly with our global
-                        teams to deliver a new video streaming platform on an
-                        aggressive timeline.</span
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide card testimonial-card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="./assets/images/profile9.webp" alt="" loading="lazy"/>
-                    </div>
-                    <div class="name-profession">
-                      <span class="name">Someone Name</span>
-                      <span class="profession"
-                        >Muoro's engineers worked seamlessly with our global
-                        teams to deliver a new video streaming platform on an
-                        aggressive timeline.</span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-button-next testimonial-next"></div>
-            <div class="swiper-button-prev testimonial-prev"></div>
-          </div>
-        </section>
-
-        <!-- 
-        - #our partners
-      -->
-
-        <section class="partners" aria-label="our partners">
-          <div style="position: relative">
-            <h2 class="partners-title">Our Partners</h2>
+      <section class="section service" aria-labelledby="service-label">
+        <div class="container">
+          <h2
+            id="service-label"
+            class="h2 section-title"
+            style="position: relative"
+          >
+            Why digital engineering<br />with Muoro?
             <img
               src="./assets/images/Vector.png"
               alt=""
+              class="service-highlighter-img"
               loading="lazy"
-              class="partners-highlighter-img"
-              
+            />
+          </h2>
+
+          <ul class="row g-5 ps-0">
+            <li class="col-lg-4">
+              <div class="project-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 560; --height: 350"
+                >
+                  <img
+                    src="./assets/images/Rectangle25.webp"
+                    width="560"
+                    height="350"
+                    loading="lazy"
+                    alt="Project card image 1"
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="card-content d-flex flex-column align-items-center">
+                  <h3 class="h3">
+                    <a href="#" class="card-title-home">Industry Recognition</a>
+                  </h3>
+
+                  <p class="card-text-home">
+                    Muoro's engineers worked seamlessly with our global teams to
+                    deliver a new video streaming platform on an aggressive
+                    timeline.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="col-lg-4">
+              <div class="project-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 560; --height: 350"
+                >
+                  <img
+                    src="./assets/images/Rectangle25.webp"
+                    width="560"
+                    height="350"
+                    loading="lazy"
+                    alt="Project card image 2"
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="card-content d-flex flex-column align-items-center">
+                  <h3 class="h3">
+                    <a href="#" class="card-title-home">Innovation at Play</a>
+                  </h3>
+
+                  <p class="card-text-home">
+                    The quality of their software development process was second
+                    to none. Would definitely hire Muoro again for my future
+                    endeavors.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="col-lg-4">
+              <div class="project-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 560; --height: 350"
+                >
+                  <img
+                    src="./assets/images/Rectangle25.webp"
+                    width="560"
+                    height="350"
+                    loading="lazy"
+                    alt="Project card image 3"
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="card-content d-flex flex-column align-items-center">
+                  <h3 class="h3">
+                    <a href="#" class="card-title-home">Global Footprint</a>
+                  </h3>
+
+                  <p class="card-text-home">
+                    The quality of their software development process was second
+                    to none. Would definitely hire Muoro again for my future
+                    endeavors.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+          <div class="about-content-img" style="position: relative">
+            <img
+              src="./assets/images/Remove-bg2.webp"
+              class="about-content-left-bulb-img"
+              loading="lazy"
+              alt="about banner"
+            />
+            <figure class="about-banner">
+              <img
+                src="./assets/images/research.webp"
+                loading="lazy"
+                alt="about banner"
+                class="about-img"
+                width="518"
+                height="515"
+              />
+            </figure>
+            <img
+              src="./assets/images/Remove-bg1.png"
+              class="about-content-right-bulb-img"
+              loading="lazy"
+              alt="about banner"
             />
           </div>
 
-          <div class="partner-carousel swiper" style="box-sizing: border-box">
-            <div class="swiper-wrapper col-lg-4 col-md-6" style="width: 90%">
-              <div class="swiper-slide">
-                <div class="partner-logo">
-                  <img
-                    src="./assets/images/puma-logo.webp"
-                    alt="Partner Logo 1"
-                    loading="lazy"
-                  />
+          <div class="about-content">
+            <h2 id="about-label" class="about-title">Muoro’s Deal</h2>
+            <p class="about-para">
+              Muoro is a top digital engineering partner that specializes in
+              cutting-edge technologies including AI/ML, cloud, SaaS,
+              blockchain, and more. Muoro, which is dedicated to speeding
+              modernization and innovation, provides value at scale to digital
+              natives and multinational companies. Our capabilities and years of
+              experience allow us to excel in both engineering and management.
+            </p>
+
+            <button class="btn btn-primary btn-lg w-50">View</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="container" aria-label="our stats">
+        <div class="stats-container">
+          <div class="stats-item">
+            <div class="stats-item-title">200k+</div>
+            <div class="stats-item-para">in app transfer</div>
+          </div>
+          <div class="stats-item">
+            <div class="stats-item-title">75%</div>
+            <div class="stats-item-para">performance improve</div>
+          </div>
+          <div class="stats-item">
+            <div class="stats-item-title">110</div>
+            <div class="stats-item-para">companies</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #clients
+      -->
+
+      <section class="testimonial-container container">
+        <h3 class="testimonial-title">
+          Here’s what our client have to say about us:
+        </h3>
+        <div class="testimonial-section">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper content">
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img
+                      src="./assets/images/profile1.webp"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession"
+                      >Muoro's engineers worked seamlessly with our global teams
+                      to deliver a new video streaming platform on an aggressive
+                      timeline.
+                    </span>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="partner-logo">
-                  <img
-                    src="./assets/images/neudesic-logo.webp"
-                    alt="Partner Logo 2"
-                    loading="lazy"
-                  />
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img
+                      src="./assets/images/profile2.webp"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession"
+                      >Muoro's engineers worked seamlessly with our global teams
+                      to deliver a new video streaming platform on an aggressive
+                      timeline.</span
+                    >
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="partner-logo">
-                  <img
-                    src="./assets/images/nike-logo.webp"
-                    alt="Partner Logo 3"
-                    loading="lazy"
-                  />
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img
+                      src="./assets/images/profile3.webp"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession"
+                      >Muoro's engineers worked seamlessly with our global teams
+                      to deliver a new video streaming platform on an aggressive
+                      timeline.</span
+                    >
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="partner-logo">
-                  <img
-                    src="./assets/images/algoworks-logo.webp"
-                    alt="Partner Logo 4"
-                    loading="lazy"
-                  />
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img
+                      src="./assets/images/profile4.webp"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession"
+                      >Muoro's engineers worked seamlessly with our global teams
+                      to deliver a new video streaming platform on an aggressive
+                      timeline.</span
+                    >
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="partner-logo">
-                  <img
-                    src="./assets/images/yahama-logo.webp"
-                    alt="Partner Logo 5"
-                    loading="lazy"
-                  />
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img
+                      src="./assets/images/profile5.webp"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession"
+                      >Muoro's engineers worked seamlessly with our global teams
+                      to deliver a new video streaming platform on an aggressive
+                      timeline.</span
+                    >
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="partner-logo">
-                  <img
-                    src="./assets/images/unifocus-logo.webp"
-                    alt="Partner Logo 6"
-                    loading="lazy"
-                  />
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img
+                      src="./assets/images/profile6.webp"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession"
+                      >Muoro's engineers worked seamlessly with our global teams
+                      to deliver a new video streaming platform on an aggressive
+                      timeline.</span
+                    >
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="partner-logo">
-                  <img
-                    src="./assets/images/pinelabs-logo.webp"
-                    alt="Partner Logo 7"
-                    loading="lazy"
-                  />
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img
+                      src="./assets/images/profile7.webp"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession"
+                      >Muoro's engineers worked seamlessly with our global teams
+                      to deliver a new video streaming platform on an aggressive
+                      timeline.</span
+                    >
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="partner-logo">
-                  <img
-                    src="./assets/images/bounce-infinity-logo.webp"
-                    alt="Partner Logo 8"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="partner-logo">
-                  <img
-                    src="./assets/images/crg-logo.webp"
-                    alt="Partner Logo 9"
-                    loading="lazy"
-                  />
+              <div class="swiper-slide card testimonial-card">
+                <div class="card-content">
+                  <div class="image">
+                    <img
+                      src="./assets/images/profile9.webp"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession"
+                      >Muoro's engineers worked seamlessly with our global teams
+                      to deliver a new video streaming platform on an aggressive
+                      timeline.</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-button-next partner-next"></div>
-          <div class="swiper-button-prev partner-prev"></div>
-        </section>
-      
+
+          <div class="swiper-button-next testimonial-next"></div>
+          <div class="swiper-button-prev testimonial-prev"></div>
+        </div>
+      </section>
+
+      <!-- 
+        - #our partners
+      -->
+
+      <section class="partners" aria-label="our partners">
+        <div style="position: relative">
+          <h2 class="partners-title">Our Partners</h2>
+          <img
+            src="./assets/images/Vector.png"
+            alt=""
+            loading="lazy"
+            class="partners-highlighter-img"
+          />
+        </div>
+
+        <div class="partner-carousel swiper" style="box-sizing: border-box">
+          <div class="swiper-wrapper col-lg-4 col-md-6" style="width: 90%">
+            <div class="swiper-slide">
+              <div class="partner-logo">
+                <img
+                  src="./assets/images/puma-logo.webp"
+                  alt="Partner Logo 1"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo">
+                <img
+                  src="./assets/images/neudesic-logo.webp"
+                  alt="Partner Logo 2"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo">
+                <img
+                  src="./assets/images/nike-logo.webp"
+                  alt="Partner Logo 3"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo">
+                <img
+                  src="./assets/images/algoworks-logo.webp"
+                  alt="Partner Logo 4"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo">
+                <img
+                  src="./assets/images/yahama-logo.webp"
+                  alt="Partner Logo 5"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo">
+                <img
+                  src="./assets/images/unifocus-logo.webp"
+                  alt="Partner Logo 6"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo">
+                <img
+                  src="./assets/images/pinelabs-logo.webp"
+                  alt="Partner Logo 7"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo">
+                <img
+                  src="./assets/images/bounce-infinity-logo.webp"
+                  alt="Partner Logo 8"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner-logo">
+                <img
+                  src="./assets/images/crg-logo.webp"
+                  alt="Partner Logo 9"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next partner-next"></div>
+        <div class="swiper-button-prev partner-prev"></div>
+      </section>
     </main>
 
     <!-- 
@@ -828,7 +865,7 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="row">
+        <div class="row" style="row-gap: 30px">
           <div class="footer-brand col-lg-3 col-sm-6">
             <a href="#" class="logo">
               <img
@@ -839,66 +876,46 @@
                 height="76"
               />
             </a>
-            <p class="footer-text">
-              Let’s code your <br />
-              digital <br />
-              engineering <br />projects. 
-            </p>
-            <p class="footer-text">
-              &copy; 2024 muoro. <br />
-              All rights reserved.
-            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+            </div>
           </div>
 
           <ul class="social-list col-lg-3 col-sm-6">
             <li>
-              <p
-                class="h4 footer-list-title"
-                style="font-size: 20px; font-weight: 600"
-              >
-                Follow Us
-              </p>
+              <p class="h4 footer-list-title">Services</p>
             </li>
 
             <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
+              <a href="#" class="footer-link">How to Works</a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
+              <a href="#" class="footer-link">About Us</a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-dribbble"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
+              <a href="#" class="footer-link">Blogs</a>
             </li>
           </ul>
 
           <ul class="footer-list col-lg-3 col-sm-6">
             <li>
-              <p
-                class="h4 footer-list-title"
-                style="font-size: 20px; font-weight: 600"
-              >
-                Contact
-              </p>
+              <p class="h4 footer-list-title">Contact</p>
             </li>
 
             <li>
@@ -922,12 +939,11 @@
 
           <ul class="footer-list col-lg-3 col-sm-6">
             <li>
-              <p
-                class="h4 footer-list-title"
-                style="font-size: 20px; font-weight: 600"
-              >
-                Useful Links
-              </p>
+              <p class="h4 footer-list-title">Useful Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">How to Works</a>
             </li>
 
             <li>
@@ -935,22 +951,17 @@
             </li>
 
             <li>
-              <a href="#" class="footer-link">Our Story</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Projects</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Terms of Use</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Privacy Policy</a>
+              <a href="#" class="footer-link">Blogs</a>
             </li>
           </ul>
         </div>
+      </div>
+      <div class="footer-end mx-auto">
+        <div class="d-flex">
+          <a href="#" class="footer-link me-5">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of use</a>
+        </div>
+        <a href="#" class="footer-text ms-5">United States</a>
       </div>
     </footer>
 

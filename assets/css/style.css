@@ -173,17 +173,21 @@ body.nav-active {
   padding-inline: 16px;
 }
 
-.social-list {
+.social-links{
   display: flex;
-  align-items: start;
-  flex-direction: column;
-  gap: 6px;
+  margin-top: 50px;
+  gap: 20px;
+  a{
+    color: var(--blue);
+  }
 }
 
 .social-link {
-  font-size: 3rem;
+  font-size: 2.5rem;
   transition: var(--transition-1);
+ 
 }
+
 
 .social-link:is(:hover, :focus-visible) {
   transform: translateY(-3px);
@@ -988,30 +992,42 @@ section .card .image img {
 
 .footer {
   background-color: var(--white);
-  padding-block: 60px 100px;
-  color: var(--charcoal);
+  padding-top: 60px;
+  color:#000000;
+
 }
 
 .footer-brand .footer-text {
   margin-block: 20px;
 }
 
-.footer .social-list {
-  color: var(--light-gray);
-}
-
 .footer-list-title {
-  color: var(--charcoal);
   margin-block-end: 16px;
+font-size: 24px;
+font-weight: 700;
+line-height: 38.41px;
+text-align: left;
+
 }
 
-.footer-link {
+.footer-link, .footer-text {
   padding-block: 4px;
   transition: var(--transition-1);
+  font-size: 18px;
+font-weight: 500;
+color: #636363;
 }
 
 .footer-link:is(:hover, :focus-visible) {
   color: var(--blue);
+}
+
+.footer-end{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+ padding: 20px 50px;
+  border-top: 1.5px solid #C5CCCA
 }
 
 /*-----------------------------------*\
@@ -1529,14 +1545,10 @@ section .card .image img {
     text-align: left;
     color: #4773d1;
     margin-bottom: 0;
+    
   }
 }
-.industries-footer {
-  background-color: #d1ddf1;
-  a {
-    color: gray;
-  }
-}
+
 
 /*-----------------------------------*\
   #INDUSTRIES PAGE END
